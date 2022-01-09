@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MenubarModule} from "primeng/menubar";
 import { AnagraficaAmministratoriComponent } from './components/anagrafica-amministratori/anagrafica-amministratori.component';
+import {TableModule} from "primeng/table";
+import {ButtonModule} from "primeng/button";
+import {ToolbarModule} from "primeng/toolbar";
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { AnagraficaAmministratoriComponent } from './components/anagrafica-ammin
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MenubarModule
+    MenubarModule,
+    TableModule,
+    ButtonModule,
+    ToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
