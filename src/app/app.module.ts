@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MenubarModule} from "primeng/menubar";
+import { AnagraficaAmministratoriComponent } from './components/anagrafica-amministratori/anagrafica-amministratori.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AnagraficaAmministratoriComponent
   ],
   imports: [
     BrowserModule,

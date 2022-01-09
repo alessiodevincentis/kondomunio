@@ -23,8 +23,8 @@ export class NavbarComponent implements OnInit {
         icon:'pi pi-fw pi-users',
         items:[
           {
-            label:'Amministratori'
-
+            label:'Amministratori',
+            routerLink: '/anagrafica-amministratori'
           },
           {
             label:'Condomìni'
