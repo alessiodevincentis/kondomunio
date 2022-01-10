@@ -2,8 +2,8 @@
   <div class="col-12">
     <p-toolbar styleClass="p-mb-4">
       <ng-template pTemplate="left">
-        <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success p-mr-2"></button>
-        <button pButton pRipple label="Delete" icon="pi pi-trash" class="p-button-danger"></button>
+        <button pButton pRipple label="Nuovo Amministratore" icon="pi pi-plus" class="p-button-success p-mr-2"></button>
+        <button pButton pRipple label="Elimina" icon="pi pi-trash" class="p-button-danger"></button>
       </ng-template>
 
       <ng-template pTemplate="right">
@@ -15,6 +15,9 @@
     <p-table [value]="amministratori" responsiveLayout="scroll">
       <ng-template pTemplate="header">
         <tr>
+          <th style="width: 3rem">
+            <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+          </th>
           <th>Cognome</th>
           <th>Nome</th>
           <th>Data di Nascita</th>
@@ -23,6 +26,9 @@
       </ng-template>
       <ng-template pTemplate="body" let-amministratore>
         <tr>
+          <td>
+            <p-tableCheckbox [value]="amministratore"></p-tableCheckbox>
+          </td>
           <td>{{amministratore.cognome}}</td>
           <td>{{amministratore.nome}}</td>
           <td>{{amministratore.dataNascita}}</td>

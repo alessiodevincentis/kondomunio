@@ -16,7 +16,8 @@ export class NavbarComponent implements OnInit {
     this.items = [
       {
         label:'Dashboard',
-        icon:'pi pi-fw pi-home'
+        icon:'pi pi-fw pi-home',
+        routerLink: '/dashboard'
       },
       {
         label:'Anagrafica',

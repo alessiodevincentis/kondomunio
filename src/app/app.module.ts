@@ -9,12 +9,15 @@ import { AnagraficaAmministratoriComponent } from './components/anagrafica-ammin
 import {TableModule} from "primeng/table";
 import {ButtonModule} from "primeng/button";
 import {ToolbarModule} from "primeng/toolbar";
+import {CheckboxModule} from "primeng/checkbox";
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AnagraficaAmministratoriComponent
+    AnagraficaAmministratoriComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import {ToolbarModule} from "primeng/toolbar";
     MenubarModule,
     TableModule,
     ButtonModule,
-    ToolbarModule
+    ToolbarModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
