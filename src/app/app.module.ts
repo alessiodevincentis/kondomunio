@@ -11,6 +11,8 @@ import {ButtonModule} from "primeng/button";
 import {ToolbarModule} from "primeng/toolbar";
 import {CheckboxModule} from "primeng/checkbox";
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {AvatarModule} from "primeng/avatar";
+import {BadgeModule} from "primeng/badge";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     TableModule,
     ButtonModule,
     ToolbarModule,
-    CheckboxModule
+    CheckboxModule,
+    BadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
